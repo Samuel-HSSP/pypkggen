@@ -2,7 +2,7 @@
 ![PyPkgGen Logo](https://i.ibb.co/kBf4T8c/pypkggen.png)
 
 Python Package Generator is a Python library for generating Python libraries for PyPI.org in an easier and faster way.
-Or do you not know how to package your Python project? Or do you want an easier and faster way to package your Python projects? If yes, then PyPkgGen is for you.
+Do you not know how to package your Python project? Or do you want an easier and faster way to package your Python projects? If yes, then PyPkgGen is for you.
 In just a few commands, your Python project will be live on PyPI.org and developers will be able to install it using ```pip```.
 
 
