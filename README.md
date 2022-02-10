@@ -18,26 +18,26 @@ Follow the instructions below to install PyPkgGen:
 
 Use pip/pip3 to install from PyPI
 ```
-$ pip install pylibgen
+$ pip install pypkggen
 ```
 You can also use Python from your command prompt
 ```
-$ python -m pip install pylibgen
+$ python -m pip install pypkggen
 ```
-Lastly, to install from GitHub (ensuring that Git has been added to PATH), do:
+Lastly, to install from GitHub (ensuring that Git has been added to PATH), run:
 ```
-$ python -m pip install git+https://www.github.com/Samuel-HSSP/pylibgen
+$ python -m pip install git+https://www.github.com/Samuel-HSSP/pypkggen
 ```
 
 ## Usage
-PyPkgGen is best used on the terminal. Make sure you have Python and Pip installed on your computer and they must be added to path. The following section of the documentation will guide you on how to package your Python project using PyPkgGen.
+PyPkgGen is best used on the terminal. Make sure you have Python and Pip installed on your computer and they must be added to PATH. The following section of the documentation will guide you on how to package your Python project using PyPkgGen.
 
 1. Initialize Python REPL
     ```
     $ python
     ```
 2. Create a folder called **source** and move all your source files (.py) into this folder. Note the path to this folder because it will be your `code_source_dir` when generating your package.
-3. Follow the instructions below and type the codes to generate your Python project.
+3. Follow the instructions below and run the codes to generate your Python project.
 ```python
 >>> from pypkggen import PyPkgGen
 >>> generator = PyPkgGen("package_name", "import_name", "code_source_dir")
@@ -52,7 +52,7 @@ PyPkgGen is best used on the terminal. Make sure you have Python and Pip install
 ```
 A simple setup file will be generated in the current working directory with the filename given, as a text file.
 Set `test` to True if you want to test your package first on test.pypi.org before publishing on PyPI.org. It is recommended to set it to True because you should test your package before publishing.
-Edit the setup file and type this final code:
+Edit the setup file and run this final code:
 
 ```python
 >>> generator.create_package(test=True)
