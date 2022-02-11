@@ -32,15 +32,15 @@ $ python -m pip install git+https://www.github.com/Samuel-HSSP/pypkggen
 ## Usage
 PyPkgGen is best used on the terminal. Make sure you have Python and Pip installed on your computer and they must be added to PATH. The following section of the documentation will guide you on how to package your Python project using PyPkgGen.
 
-1. Initialize Python REPL
+1. Initialize Python REPL Shell
     ```
     $ python
     ```
 2. Create a folder called **source** and move all your source files (.py) into this folder. Note the path to this folder because it will be your `code_source_dir` when generating your package.
 3. Follow the instructions below and run the codes to generate your Python project.
 ```python
->>> from pypkggen import PyPkgGen
->>> generator = PyPkgGen("package_name", "import_name", "code_source_dir")
+>>> from pypkggen import pypkggen
+>>> generator = pypkggen.PyPkgGen("package_name", "import_name", "code/source/dir/")
 ```
 
 'package_name' is the name you want to give your Python package
